@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#100f24"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="apple-touch-icon" href="icon.svg"><link rel="manifest" href="manifest.webmanifest"><meta name="description" content="A chaotic pixel-art platformer made for Rayen."><title>RAYEN BITCH GAME — Cursed Pixel Adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<header class="topbar"><div class="brand">RAYEN<span> BITCH GAME</span><small>RAYEN.EXE HAS STOPPED MAKING SENSE</small></div><div class="top-actions"><button id="installBtn" class="tiny" hidden>📲 INSTALL GAME</button><button id="soundBtn" class="tiny">♫ MUSIC: ON</button></div></header>
+<main>
+<section id="home" class="screen active">
+<div class="hero"><div class="eyebrow">✦ RAYEN BITCH GAME · BUILD 000</div><h1>RAYEN, YOU HAVE<br><em>BEEN SUMMONED.</em></h1><p>Three cursed worlds. One tiny pixel hero. Several criminally bad decisions.</p>
+<div class="hero-buttons"><button id="playBtn" class="primary">▶ START THE NONSENSE</button><button id="editorBtn" class="secondary">🖼 MEME LAB</button></div>
+<div class="tiny-note">Keyboard: A/D or ←/→ to move · Space/W/↑ to jump · Esc to pause</div><div id="loadStatusHome" class="load-status wait" aria-live="polite">PHOTOS: loading…</div></div>
+<div class="hero-scene" aria-label="Pixel art scene from the game">
+<svg class="hero-pixel-art" viewBox="0 0 420 330" role="img" aria-label="A tiny adventurer jumps through a pixel-art city at night" shape-rendering="crispEdges">
+<defs><pattern id="brick" width="24" height="16" patternUnits="userSpaceOnUse"><rect width="24" height="16" fill="#354763"/><path d="M0 0H24M0 8H24M12 0V8M5 8V16" stroke="#536785" stroke-width="2"/></pattern><pattern id="stars" width="47" height="43" patternUnits="userSpaceOnUse"><rect x="7" y="9" width="3" height="3" fill="#fff4bd"/><rect x="31" y="25" width="2" height="2" fill="#92f8db"/><rect x="20" y="35" width="2" height="2" fill="#f7a4c5"/></pattern></defs>
+<rect width="420" height="330" fill="#171d43"/><rect width="420" height="190" fill="url(#stars)"/><path d="M0 180L38 135 68 160 102 112 143 166 178 123 214 158 252 104 291 155 330 117 374 162 420 130V235H0Z" fill="#29345f"/>
+<g fill="#35436f"><path d="M0 150H54V260H0Z"/><path d="M66 105H119V260H66Z"/><path d="M133 135H178V260H133Z"/><path d="M191 86H250V260H191Z"/><path d="M263 126H315V260H263Z"/><path d="M328 98H388V260H328Z"/><path d="M395 153H420V260H395Z"/></g>
+<g fill="#ffd778"><path d="M14 170h7v9h-7zM32 170h7v9h-7zM80 125h7v9h-7zM101 146h7v9h-7zM148 158h7v9h-7zM208 112h7v9h-7zM230 139h7v9h-7zM278 151h7v9h-7zM350 120h7v9h-7zM370 144h7v9h-7z"/></g>
+<circle cx="339" cy="52" r="22" fill="#ffe9a6"/><rect x="332" y="36" width="18" height="4" fill="#fff8dc"/><rect x="350" y="47" width="6" height="14" fill="#d8a9ad"/>
+<g transform="translate(28 0)"><path d="M0 228H364V290H0Z" fill="url(#brick)"/><path d="M0 226H364V236H0Z" fill="#a4f3d7"/><path d="M18 236H72V243H18Z M100 236H146V243H100Z M191 236H240V243H191Z M282 236H338V243H282Z" fill="#d8fff0"/><path d="M30 290H350V310H30Z" fill="#1c2645"/><path d="M30 290H350V294H30Z" fill="#657b91"/></g>
+<!-- floating platforms --> <path d="M42 190H124V202H42Z" fill="#d8a9ff"/><path d="M42 202H124V208H42Z" fill="#604a86"/><path d="M248 169H316V181H248Z" fill="#d8a9ff"/><path d="M248 181H316V187H248Z" fill="#604a86"/>
+<!-- tiny hero with a turquoise hoodie --> <g transform="translate(173 155)"><path d="M8 0H27V5H33V18H29V28H35V41H28V47H21V38H15V47H7V40H2V25H7V16H3V7H8Z" fill="#252444"/><path d="M10 5H27V17H10Z" fill="#f2c4a4"/><path d="M7 5H29V10H7Z" fill="#352843"/><path d="M10 12H14V16H10Z M22 12H26V16H22Z" fill="#fff1c5"/><path d="M11 13H13V16H11Z M23 13H25V16H23Z" fill="#24213a"/><path d="M9 19H28V35H9Z" fill="#53d9d0"/><path d="M6 22H11V34H6Z M27 22H32V34H27Z" fill="#329bb2"/><path d="M12 35H18V42H12Z M21 35H27V42H21Z" fill="#f2c4a4"/><path d="M10 41H18V47H10Z M22 41H30V47H22Z" fill="#292542"/><path d="M12 23H17V28H12Z" fill="#d9fff3"/></g>
+<!-- ridiculous little floating meme relic --> <g transform="translate(218 128)"><rect width="24" height="24" fill="#fff0ad"/><rect x="3" y="3" width="18" height="18" fill="#ffb85b"/><rect x="6" y="7" width="4" height="4" fill="#49375c"/><rect x="15" y="7" width="4" height="4" fill="#49375c"/><rect x="8" y="15" width="8" height="2" fill="#49375c"/><path d="M-4 8L0 10M24 10L28 8M9 -4L12 0M19 23L22 27" stroke="#fff0ad" stroke-width="3"/></g>
+<g fill="#ff83ad"><rect x="47" y="76" width="6" height="6"/><rect x="53" y="70" width="6" height="6"/><rect x="59" y="76" width="6" height="6"/><rect x="53" y="82" width="6" height="6"/></g><g fill="#9df7dc"><rect x="300" y="88" width="4" height="4"/><rect x="304" y="84" width="4" height="4"/><rect x="308" y="88" width="4" height="4"/><rect x="304" y="92" width="4" height="4"/></g>
+<rect x="12" y="12" width="134" height="22" fill="#11162f" stroke="#8d82b8" stroke-width="2"/><text x="21" y="27" font-family="monospace" font-size="10" fill="#a4f3d7">WORLD 01 // LORE CITY</text><rect x="270" y="12" width="136" height="22" fill="#11162f" stroke="#8d82b8" stroke-width="2"/><text x="279" y="27" font-family="monospace" font-size="10" fill="#ffd778">HP ♥ ♥ ♥  MEMES 0/5</text>
+<rect x="16" y="310" width="388" height="8" fill="#11162f"/><rect x="16" y="310" width="248" height="8" fill="#ff83ad"/><rect x="16" y="310" width="2" height="8" fill="#fff0ad"/>
+</svg><div class="scene-sticker sticker-one">NO THOUGHTS<br>JUST LORE</div><div class="scene-sticker sticker-two">+1000 CRINGE</div><div class="scene-caption"><span>▶ LIVE GAMEPLAY PREVIEW</span><span>16-BIT CHAOS ENGINE</span></div></div>
+<div class="stat-row"><div><b>03</b><span>CHAOTIC WORLDS</span></div><div><b>∞</b><span>UNNECESSARY DRAMA</span></div><div><b>01</b><span>RAYEN (MENACE)</span></div></div>
+</section>
+<section id="game" class="screen">
+<div class="hud"><div><b id="levelName">LEVEL 1</b><span id="objective">COLLECT THE CURSED MEMES</span></div><div class="hud-right"><span id="lives" class="lives" aria-label="3 hearts">♥ ♥ ♥</span><span id="score">MEMES 0/5</span><button id="fsBtn" class="tiny" hidden aria-label="Fullscreen">⤢</button><button id="pauseBtn" class="tiny">Ⅱ PAUSE</button></div></div>
+<div class="rotate-hint">📱↻ TURN YOUR PHONE SIDEWAYS FOR A BIGGER GAME</div>
+<div id="gameWrap"><canvas id="gameCanvas" width="960" height="540" aria-label="Rayen Bitch Game platform game"></canvas>
+<div id="dialogue" class="dialogue hidden"><div class="speaker" id="speaker">RAYEN.EXE</div><p id="dialogueText"></p><button id="dialogueNext">OKAY BRO ▶</button></div>
+<div id="overlay" class="overlay hidden"><div class="overlay-card"><div class="eyebrow" id="overlayTag">SYSTEM PAUSED</div><h2 id="overlayTitle">PAUSE, BESTIE.</h2><p id="overlayText">The chaos is temporarily buffering.</p><div class="overlay-buttons" id="overlayButtons"></div></div></div>
+</div>
+<div class="touch-controls"><div class="joystick" id="joystick" role="group" aria-label="Movement joystick"><div class="joystick-ring"><div class="joystick-stick" id="joystickStick"></div></div><span>MOVE</span></div><button data-key="jump" class="jump" aria-label="Jump">JUMP ⤴</button></div>
+<div class="game-footer"><span>📦 Export your custom bundle to keep it</span><span>Tip: bonk enemies from above. Emotionally, not legally.</span></div>
+</section>
+<section id="editor" class="screen">
+<div class="section-heading"><div><div class="eyebrow">THE MEME LAB</div><h2>Personalize the chaos.</h2><p>Your uploaded memes become collectible pixel cards and the final reveal. Export one bundle so Rayen sees the same chaos too.</p></div><button id="backHome" class="tiny">← BACK</button></div>
+<div class="editor-grid">
+<div class="editor-main">
+<div class="panel"><h3>📸 Upload your memes</h3><p class="muted">JPG, JPEG, PNG, WEBP · up to 20 images · stored in this browser until exported.</p><label class="upload-drop" for="photoInput"><span>＋</span><b>Choose meme photos</b><small>Tap to browse your files</small></label><input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden>
+<div class="toolbar"><button id="sampleBtn" class="secondary">Add sample memes</button><button id="exportBtn" class="primary">⬇ Export custom bundle</button><label class="secondary file-label">⬆ Import bundle<input id="importInput" type="file" accept="application/json,.json" hidden></label></div><p id="loadStatusEditor" class="load-status wait" aria-live="polite">PHOTOS: loading…</p><p id="usageStatus" class="muted usage-status"></p><div id="photoList" class="photo-list"></div><p id="editorStatus" class="status" aria-live="polite"></p></div>
+<div class="panel"><h3>💌 The fake emotional letter</h3><textarea id="letterInput" rows="6" maxlength="1800"></textarea><label class="field-label" for="revealInput">Final reveal message</label><textarea id="revealInput" rows="2" maxlength="240"></textarea><label class="field-label" for="revealSelect">Final reveal meme</label><select id="revealSelect"></select><button id="saveTextBtn" class="secondary">Save letter & message</button></div>
+</div>
+<aside class="editor-side"><div class="panel preview-panel"><div class="eyebrow">LIVE PREVIEW</div><h3 id="previewCaption">THE LORE IS REAL.</h3><div class="preview-image" id="previewImage">🫠<small>Your meme goes here</small></div><p id="previewMessage">Rayen, this friendship has terrible patch notes.</p><button id="previewBtn" class="secondary">Preview ending</button></div><div class="panel"><h3>📦 Important</h3><p class="muted">Local edits live only in this browser. Export the custom bundle, then see the README to publish it (<code>custom-content.json</code> + <code>photos/</code>). That is how Rayen receives the exact same photos and captions.</p></div></aside>
+</div>
+</section>
+<section id="ending" class="screen ending-screen"><div class="ending-content"><div class="eyebrow">RAYEN BITCH GAME — FINAL REPORT</div><h1>RAYEN, YOU<br><em>ABSOLUTELY MENACE.</em></h1><div id="endingMeme" class="ending-meme">🫠</div><h2 id="endingCaption">THE LORE IS REAL.</h2><p id="endingLetter"></p><h2 id="endingReveal"></h2><p class="ending-small">No matter how much we argue, you’re still one of my favorite humans. Don’t let this get to your head.</p><button id="replayBtn" class="primary">↻ PLAY AGAIN</button><button id="endingEditorBtn" class="secondary">EDIT MEMES</button></div></section>
+</main><footer>MADE WITH 2 BRAINCELLS AND A QUESTIONABLE AMOUNT OF AFFECTION.</footer>
+</div>
+<div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Original photo"><button id="lbClose" class="lb-close" aria-label="Close">✕</button><button id="lbPrev" class="lb-nav" aria-label="Previous photo">◀</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure><button id="lbNext" class="lb-nav" aria-label="Next photo">▶</button></div>
+<script src="custom-content.js"></script><script src="game.js"></script></body></html>
